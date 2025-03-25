@@ -1,5 +1,13 @@
 // Function to take order
 // Time Complexity - O(n)
+void printLaptopList(const vector<Laptop>& laptops) {
+    string separator = "--------------------------------------------";
+    for (const auto& laptop : laptops) {
+        cout << laptop.id << "\t\t" << laptop.ram << "\t\t" << laptop.processor << "\t" << laptop.model << "\t" << laptop.price << endl;
+        cout << separator << endl;
+    }
+}
+
 void computerType ::take_order()
 {
     system("cls");
@@ -15,103 +23,21 @@ void computerType ::take_order()
     node *temp;
     temp = new node;
 
+    vector<Laptop> laptops = {
+        {"0001", "8GB", "Intel Core i5(10th Gen)", "Dell Inspiron 15 5590", "66490.00"},
+        {"0002", "4GB", "Intel Core i3(10th Gen)", "Asus X412FA-EK361T", "40000.00"},
+        {"0003", "4GB", "Intel Core i5(8th Gen)", "Lenovo Ideapad 330", "44000.00"},
+        {"0004", "8GB", "Intel Core i5(8th Gen)", "Huawei Mach-W19B", "77899.00"},
+        {"0005", "8GB", "macOS Catalina", "Apple MacBook Air", "118990.00"},
+        {"0006", "8GB", "Intel Core i5(10th Gen)", "HP 15s-du1034tu", "53999.00"},
+        {"0007", "4GB", "Intel Core i3(5th Gen)", "Acer Aspire ES1-571", "25655.00"},
+        {"0008", "4GB", "Intel Core i3(7th Gen)", "HP 15-DA0070TX", "49279.00"},
+        {"0009", "4GB", "Intel Core i5(6th Gen)", "Lenovo Ideapad 300", "43000.00"},
+        {"0010", "8GB", "Intel Core i7(5th Gen)", "HP Pavilion 15-ac028TX", "64000.00"}
+    };
+
     cout << str1;
-    cout << " ID "
-         << "\t   COMPUTER TYPE"
-         << "\t COMPUTER SPECS"
-         << "   \t\t COMPUTER NAME"
-         << "    \t\tCOMPUTER PRICE (RS.)" << endl;
-    cout << str1;
-    cout << "0001"
-         << "\t"
-         << "\t8GB"
-         << "\t\t"
-         << " Intel Core i5(10th Gen)"
-         << "\t"
-         << " Dell Inspiron 15 5590  "
-         << "\t66490.00" << endl;
-    cout << str2;
-    cout << "0002"
-         << "\t"
-         << "\t4GB"
-         << "\t\t"
-         << " Intel Core i3(10th Gen)"
-         << "\t"
-         << " Asus X412FA-EK361T     "
-         << "\t40000.00" << endl;
-    cout << str2;
-    cout << "0003"
-         << "\t"
-         << "\t4GB"
-         << "\t\t"
-         << " Intel Core i5(8th Gen) "
-         << "\t"
-         << " Lenovo Ideapad 330     "
-         << "\t44000.00" << endl;
-    cout << str2;
-    cout << "0004"
-         << "\t"
-         << "\t8GB"
-         << "\t\t"
-         << " Intel Core i5 (8th Gen)  "
-         << "\t"
-         << " Huawei Mach-W19B"
-         << "\t77899.00" << endl;
-    cout << str2;
-    cout << "0005"
-         << "\t"
-         << "\t8GB"
-         << "\t\t"
-         << " macOS Catalina         "
-         << "\t"
-         << " Apple MacBook Air      "
-         << "\t118990.00" << endl;
-    cout << str2;
-    cout << "0006"
-         << "\t"
-         << "\t8GB"
-         << "\t\t"
-         << " Intel Core i5(10th Gen)"
-         << "\t"
-         << " HP 15s-du1034tu        "
-         << "\t53999.00" << endl;
-    cout << str2;
-    cout << "0007"
-         << "\t"
-         << "\t4GB"
-         << "\t\t"
-         << " Intel Core i3(5th Gen) "
-         << "\t"
-         << " Acer Aspire ES1-571    "
-         << "\t25655.00" << endl;
-    cout << str2;
-    cout << "0008"
-         << "\t"
-         << "\t4GB"
-         << "\t\t"
-         << " Intel Core i3(7th Gen) "
-         << "\t"
-         << " HP 15-DA0070TX           "
-         << "\t49279.00" << endl;
-    cout << str2;
-    cout << "0009"
-         << "\t"
-         << "\t4GB"
-         << "\t\t"
-         << " Intel Core i5(6th Gen) "
-         << "\t"
-         << " Lenovo Ideapad 300     "
-         << "\t43000.00" << endl;
-    cout << str2;
-    cout << "0010"
-         << "\t"
-         << "\t8GB"
-         << "\t\t"
-         << " Intel Core i7(5th Gen) "
-         << "\t"
-         << " HP Pavilion 15-ac028TX "
-         << "\t64000.00" << endl;
-    cout << str1;
+    printLaptopList(laptops);
     cout << " " << endl;
 
     temp = new node;

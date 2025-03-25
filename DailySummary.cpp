@@ -1,6 +1,6 @@
 // Function to display Daily Summary
 // Time Complexity - O(n^2)
-void computerType ::daily_summary()
+void computerType :: daily_summary()
 {
     int i, num;
     string str = "\t\t===========================================\n";

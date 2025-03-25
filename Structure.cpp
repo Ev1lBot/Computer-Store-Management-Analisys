@@ -27,3 +27,11 @@ struct node
 node *start_ptr = nullptr;
 node *head = nullptr;
 node *last = nullptr;
+
+struct Laptop {
+    string id;
+    string ram;
+    string processor;
+    string model;
+    string price;
+};
