@@ -29,7 +29,7 @@ void computerType ::take_order()
          << " Intel Core i5(10th Gen)"
          << "\t"
          << " Dell Inspiron 15 5590  "
-         << "  	66490.00" << endl;
+         << "\t66490.00" << endl;
     cout << str2;
     cout << "0002"
          << "\t"
@@ -38,7 +38,7 @@ void computerType ::take_order()
          << " Intel Core i3(10th Gen)"
          << "\t"
          << " Asus X412FA-EK361T     "
-         << "	40000.00" << endl;
+         << "\t40000.00" << endl;
     cout << str2;
     cout << "0003"
          << "\t"
@@ -47,7 +47,7 @@ void computerType ::take_order()
          << " Intel Core i5(8th Gen) "
          << "\t"
          << " Lenovo Ideapad 330     "
-         << "	44000.00" << endl;
+         << "\t44000.00" << endl;
     cout << str2;
     cout << "0004"
          << "\t"
@@ -56,7 +56,7 @@ void computerType ::take_order()
          << " Intel Core i5 (8th Gen)  "
          << "\t"
          << " Huawei Mach-W19B"
-         << "       \t77899.00" << endl;
+         << "\t77899.00" << endl;
     cout << str2;
     cout << "0005"
          << "\t"
