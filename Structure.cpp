@@ -24,6 +24,6 @@ struct node
 
 } *q, *temp; // Pointer declaration
 
-node *start_ptr = NULL;
-node *head = NULL;
-node *last = NULL;
+node *start_ptr = nullptr;
+node *head = nullptr;
+node *last = nullptr;

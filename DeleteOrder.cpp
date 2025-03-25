@@ -26,6 +26,7 @@ void computerType ::delete_order()
 
         if (start_ptr->receipt_number == num)
         {
+            q = start_ptr;
             start_ptr = start_ptr->next;
 
             if (start_ptr == nullptr)

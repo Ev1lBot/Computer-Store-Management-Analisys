@@ -11,7 +11,7 @@ void computerType ::order_list()
 
     node *temp = start_ptr;
 
-    if (temp == NULL) // If list is empty
+    if (temp == nullptr) // If list is empty
     {
         cout << endl << str;
         cout << "\t\t\tThere is no Order to show!!!\n\t\t\tThe List is Empty\n";
@@ -24,7 +24,7 @@ void computerType ::order_list()
         cin >> num;
         cout << "\n";
         
-        while (temp != NULL && !found)
+        while (temp != nullptr && !found)
         {
             if (temp->receipt_number == num)
                 found = true;

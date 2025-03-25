@@ -65,7 +65,7 @@ void computerType ::take_order()
          << " macOS Catalina         "
          << "\t"
          << " Apple MacBook Air      "
-         << "	118990.00" << endl;
+         << "\t118990.00" << endl;
     cout << str2;
     cout << "0006"
          << "\t"
@@ -74,7 +74,7 @@ void computerType ::take_order()
          << " Intel Core i5(10th Gen)"
          << "\t"
          << " HP 15s-du1034tu        "
-         << " 	53999.00" << endl;
+         << "\t53999.00" << endl;
     cout << str2;
     cout << "0007"
          << "\t"
@@ -83,7 +83,7 @@ void computerType ::take_order()
          << " Intel Core i3(5th Gen) "
          << "\t"
          << " Acer Aspire ES1-571    "
-         << "	25655.00" << endl;
+         << "\t25655.00" << endl;
     cout << str2;
     cout << "0008"
          << "\t"
@@ -92,7 +92,7 @@ void computerType ::take_order()
          << " Intel Core i3(7th Gen) "
          << "\t"
          << " HP 15-DA0070TX           "
-         << "	49279.00" << endl;
+         << "\t49279.00" << endl;
     cout << str2;
     cout << "0009"
          << "\t"
@@ -101,7 +101,7 @@ void computerType ::take_order()
          << " Intel Core i5(6th Gen) "
          << "\t"
          << " Lenovo Ideapad 300     "
-         << "        43000.00" << endl;
+         << "\t43000.00" << endl;
     cout << str2;
     cout << "0010"
          << "\t"
@@ -110,7 +110,7 @@ void computerType ::take_order()
          << " Intel Core i7(5th Gen) "
          << "\t"
          << " HP Pavilion 15-ac028TX "
-         << "	64000.00" << endl;
+         << "\t64000.00" << endl;
     cout << str1;
     cout << " " << endl;
 
@@ -185,9 +185,9 @@ void computerType ::take_order()
 
         system("PAUSE");
 
-        temp->next = NULL;
+        temp->next = nullptr;
 
-        if (start_ptr != NULL)
+        if (start_ptr != nullptr)
             temp->next = start_ptr;
 
         start_ptr = temp;

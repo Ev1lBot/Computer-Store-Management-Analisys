@@ -7,7 +7,7 @@ void computerType ::modify()
     bool found = false;
     temp = start_ptr;
 
-    if (temp == NULL || sid == 0)
+    if (temp == nullptr || sid == 0)
     {
         cout << "\n\t\t=============================\n";
         cout << "\t\t    NO RECORD TO MODIFY...!\n";
@@ -19,7 +19,7 @@ void computerType ::modify()
         cout << "\nEnter Receipt Number To Modify: ";
         cin >> sid;
 
-        while (temp != NULL && !found)
+        while (temp != nullptr && !found)
         {
             if (temp->receipt_number == sid)
                 found = true;
@@ -83,7 +83,7 @@ void computerType ::modify()
 
             else
             {
-                if (temp != NULL && temp->receipt_number != sid)
+                if (temp != nullptr && temp->receipt_number != sid)
                 {
                     cout << "\n\t\t===============================\n";
                     cout << "\t\t   Invalid Receipt Number...!" << endl;
