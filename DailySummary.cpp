@@ -10,7 +10,7 @@ void computerType ::daily_summary()
 
     temp = start_ptr;
 
-    if (temp == NULL) // Invalid receipt code
+    if (temp == nullptr) // Invalid receipt code
     {
         cout << endl << str;
         cout << "\t\t\tThere is no Order to show!!!\n\t\t\tThe List is Empty\n";
@@ -25,7 +25,7 @@ void computerType ::daily_summary()
         cout << "================================================================================================\n"
              << endl;
 
-        while (temp != NULL)
+        while (temp != nullptr)
         {
 
             cout << "Receipt Number : " << temp->receipt_number << endl;

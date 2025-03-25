@@ -6,7 +6,7 @@ void computerType ::delete_order()
 
     string str = "\t===========================================\n";
 
-    if (start_ptr == NULL)
+    if (start_ptr == nullptr)
     {
         cout << endl;
         cout << str;
@@ -26,11 +26,10 @@ void computerType ::delete_order()
 
         if (start_ptr->receipt_number == num)
         {
-            q = start_ptr;
             start_ptr = start_ptr->next;
 
-            if (start_ptr == NULL)
-                last = NULL;
+            if (start_ptr == nullptr)
+                last = nullptr;
 
             delete q;
 
@@ -44,7 +43,7 @@ void computerType ::delete_order()
             temp = start_ptr;
             q = start_ptr->next;
 
-            while ((!found) && (q != NULL))
+            while ((!found) && (q != nullptr))
             {
                 if (q->receipt_number != num)
                 {
